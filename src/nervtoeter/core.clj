@@ -1,7 +1,10 @@
-(ns nervtoeter.core)
+(ns nervtoeter.core
+  (:use [jayq.core :only [$]]))
 
-(defn ^:export init 
+(def $jplayer ($ "#jplayer"))
+
+(defn ^:export play-sound 
   ""
-  []
-  (js/alert "Test"))
+  [sound]
+  (js/alert sound))
 

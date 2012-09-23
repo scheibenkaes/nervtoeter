@@ -4,7 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :plugins [[lein-cljsbuild "0.2.4"]]
-  :dependencies [[org.clojure/clojure "1.4.0"]]
+  :dependencies [[org.clojure/clojure "1.4.0"]
+                 [jayq "0.1.0-alpha3"]]
   :cljsbuild {:crossovers [nervtoeter]
               :crossover-path ".bin"
               :builds [{

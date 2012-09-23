@@ -13,3 +13,5 @@ pom.xml
 /resources/public/cljs/core.js
 /resources/public/nervtoeter/core.js
 .bin
+/resources/public/clojure
+/resources/public/jayq
