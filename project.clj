@@ -1,6 +1,6 @@
-(defproject nervtoeter "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject nervtoeter "0.1.0"
+  :description "Geh Deinen Kollegen auf die Nerven"
+  :url "http://apps.scheibenkaes.org/nervtoeter/"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :plugins [[lein-cljsbuild "0.2.4"]]
