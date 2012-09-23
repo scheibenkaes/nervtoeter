@@ -8,30 +8,20 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-    <!--div id="content" data-role="content">
-    <div id="" class="content-primary">
-      <ul data-role="content-primary">
-        <li data-role="list-divider">Beginn</li>
-      </ul>  
-    </div> 
-    </div--> 
-<div data-role="page">
+    <div data-role="page">
+      
+      <div data-role="header">
+	<h1>Nervt&ouml;ter</h1>
+      </div><!-- /header -->
 
-	<div data-role="header">
-		<h1>Nervt&ouml;ter</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">
-          <ul data-role="listview">
-            <li data-role="list-divider">Beginn</li>
-            <li><a onclick="nervtoeter.core.play_sound('ovation')">Los
-            geht's</a> </li>
-            <li><audio controls autobuffer><source src="sound/ovation.mp3" /></audio></li>
-            <li><audio controls autobuffer><source src="sound/ovation.mp3" /></audio></li>
-          </ul>  
-	</div><!-- /content -->
-        <div id="player">
-        </div>
-</div>
+      <div data-role="content">
+        <ul data-role="listview">
+          <li data-role="list-divider">Beginn</li>
+          <li><a onclick="nervtoeter.core.play_sound('ovation')">Los geht's</a> </li>
+        </ul>  
+      </div><!-- /content -->
+      <div id="player">
+      </div>
+    </div>
   </body>
 </html>
