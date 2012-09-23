@@ -10,6 +10,8 @@
               :builds [{
                         :compiler {:output-to "resources/public/app.js"
                                    :output-dir "resources/public/"
+                                   :libs ["resources/public/extern/jquery-1.8.2.min.js"
+                                          "resources/public/extern/jquery.mobile-1.1.1.min.js"]
                                    :pretty-print true
                                    :optimizations :simple}
-                        :source-path "bin"}]})
+                        :source-path ".bin"}]})
