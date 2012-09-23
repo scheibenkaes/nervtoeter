@@ -2,7 +2,12 @@
   (:use [jayq.core :only [$ append]]))
 
 (def sounds
-  {"ovation" "sound/ovation.mp3"})
+  {"Beginn" 
+   [["ovation" "sound/ovation.mp3"]]})
+
+(defn find-sound [group sound]
+  (when-let [gr (get sounds group)]
+    (first (for [s gr :when (= sound (first s))] (second s)))))
 
 (def audio ($ :#player))
 
@@ -17,8 +22,8 @@
 
 (defn ^:export play-sound 
   ""
-  [sound]
-  (if-let [s (get sounds sound)]
+  [group sound]
+  (if-let [s (find-sound group sound)]
     (do
       (set! (.-src @player) s)
       (. @player (play)))
