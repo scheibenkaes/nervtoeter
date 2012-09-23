@@ -1,6 +1,7 @@
 (ns nervtoeter.core)
 
-(defn -main
-  "I don't do a whole lot."
-  [& args]
-  (println "Hello, World!"))
+(defn ^:export init 
+  ""
+  []
+  (js/alert "Test"))
+
